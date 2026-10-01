@@ -3,7 +3,6 @@
 
 <head>
 <meta charset="utf-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description"
@@ -49,9 +48,10 @@ a {
   text-decoration: none;
 }
 
-/* =========================
+
+/* =========================================
    NAVIGATION
-========================= */
+========================================= */
 
 .nav {
   height: 68px;
@@ -91,9 +91,10 @@ a {
   color: var(--acid);
 }
 
-/* =========================
+
+/* =========================================
    HERO
-========================= */
+========================================= */
 
 .hero {
   min-height: 100svh;
@@ -109,27 +110,15 @@ a {
 
 .eyebrow,
 .kicker {
-
   font-family: "DM Mono", monospace;
-
   font-size: 12px;
-
   letter-spacing: .08em;
-
   text-transform: uppercase;
 }
 
 .hero h1 {
-
-  font-size:
-  clamp(
-  76px,
-  15.4vw,
-  235px
-  );
-
+  font-size: clamp(76px, 15.4vw, 235px);
   line-height: .72;
-
   letter-spacing: -.085em;
 
   margin: auto 0;
@@ -142,100 +131,59 @@ a {
 }
 
 .hero-bottom {
-
   display: flex;
-
-  justify-content:
-  space-between;
-
-  align-items:
-  flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .manifesto {
-
-  font-size:
-  clamp(
-  24px,
-  3vw,
-  48px
-  );
-
+  font-size: clamp(24px, 3vw, 48px);
   line-height: 1.02;
-
   letter-spacing: -.04em;
-
   margin: 0;
 }
 
 .aside {
-
-  font-family:
-  "DM Mono",
-  monospace;
-
+  font-family: "DM Mono", monospace;
   font-size: 14px;
-
   line-height: 1.4;
 
-  transform:
-  rotate(3deg);
+  transform: rotate(3deg);
 
-  margin-right:
-  8vw;
+  margin-right: 8vw;
 }
 
 .scroll {
-
-  font-family:
-  "DM Mono",
-  monospace;
-
+  font-family: "DM Mono", monospace;
   font-size: 11px;
 
-  margin-top:
-  35px;
+  margin-top: 35px;
 }
 
-/* =========================
+
+/* =========================================
    TICKER
-========================= */
+========================================= */
 
 .ticker {
+  background: var(--acid);
 
-  background:
-  var(--acid);
+  overflow: hidden;
 
-  overflow:
-  hidden;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
 
-  border-top:
-  1px solid #111;
+  padding: 12px 0;
 
-  border-bottom:
-  1px solid #111;
+  white-space: nowrap;
 
-  padding:
-  12px 0;
-
-  white-space:
-  nowrap;
-
-  font-family:
-  "DM Mono",
-  monospace;
-
-  font-weight:
-  700;
-
-  font-size:
-  16px;
+  font-family: "DM Mono", monospace;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .ticker div {
-
-  width:
-  max-content;
+  width: max-content;
 
   animation:
   tickerMove
@@ -245,453 +193,286 @@ a {
 }
 
 @keyframes tickerMove {
-
   to {
-    transform:
-    translateX(-50%);
+    transform: translateX(-50%);
   }
-
 }
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+
+/* =========================================
+   GENERAL
+========================================= */
 
 .section {
-
-  padding:
-  100px
-  3vw;
+  padding: 100px 3vw;
 }
 
 .section h2 {
+  font-size: clamp(54px, 9vw, 140px);
+  line-height: .82;
+  letter-spacing: -.07em;
 
-  font-size:
-  clamp(
-  54px,
-  9vw,
-  140px
-  );
-
-  line-height:
-  .82;
-
-  letter-spacing:
-  -.07em;
-
-  margin:
-  60px 0 90px;
+  margin: 60px 0 90px;
 }
 
-/* =========================
-   CAREER
-========================= */
+
+/* =========================================
+   THE PLOT
+========================================= */
 
 .chapters {
-
-  border-top:
-  1px solid
-  var(--ink);
+  border-top: 1px solid var(--ink);
 }
 
 .chapter {
-
-  display:
-  grid;
+  display: grid;
 
   grid-template-columns:
   12%
   1fr;
 
-  padding:
-  30px 0;
+  padding: 30px 0;
 
-  border-bottom:
-  1px solid
-  var(--ink);
+  border-bottom: 1px solid var(--ink);
 
-  transition:
-  all .2s ease;
+  transition: all .2s ease;
 }
 
 .chapter:hover {
-
-  padding-left:
-  15px;
-
-  background:
-  var(--acid);
+  padding-left: 15px;
+  background: var(--acid);
 }
 
 .num,
 .chapter-label,
 .project-copy span {
-
-  font-family:
-  "DM Mono",
-  monospace;
-
-  font-size:
-  11px;
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
 }
 
 .chapter h3 {
+  font-size: clamp(55px, 10vw, 150px);
 
-  font-size:
-  clamp(
-  55px,
-  10vw,
-  150px
-  );
+  letter-spacing: -.07em;
+  line-height: .8;
 
-  letter-spacing:
-  -.07em;
-
-  line-height:
-  .8;
-
-  margin:
-  12px 0;
+  margin: 12px 0;
 }
 
 .chapter p:last-child {
+  max-width: 620px;
 
-  max-width:
-  620px;
-
-  font-size:
-  17px;
-
-  line-height:
-  1.45;
+  font-size: 17px;
+  line-height: 1.45;
 }
 
-/* =========================
+
+/* =========================================
    PROJECTS
-========================= */
+========================================= */
 
 .work {
-
-  background:
-  #111;
-
-  color:
-  var(--paper);
+  background: #111;
+  color: var(--paper);
 }
 
 .project-grid {
-
-  display:
-  grid;
+  display: grid;
 
   grid-template-columns:
   1fr 1fr;
 
   gap:
-  7vw 2vw;
+  7vw
+  2vw;
 }
 
 .project {
-
-  margin-bottom:
-  70px;
+  margin-bottom: 70px;
 }
 
 .project.big {
-
-  grid-column:
-  span 2;
+  grid-column: span 2;
 }
 
 .visual {
+  height: 56vw;
+  max-height: 720px;
 
-  height:
-  56vw;
+  display: flex;
 
-  max-height:
-  720px;
+  align-items: center;
+  justify-content: center;
 
-  display:
-  flex;
+  overflow: hidden;
 
-  align-items:
-  center;
-
-  justify-content:
-  center;
-
-  overflow:
-  hidden;
-
-  color:
-  #111;
+  color: #111;
 }
 
-.project:not(.big)
-.visual {
-
-  height:
-  44vw;
-
-  max-height:
-  620px;
+.project:not(.big) .visual {
+  height: 44vw;
+  max-height: 620px;
 }
 
 .visual span {
+  font-size: clamp(55px, 10vw, 150px);
 
-  font-size:
-  clamp(
-  55px,
-  10vw,
-  150px
-  );
+  font-weight: 900;
 
-  font-weight:
-  900;
+  line-height: .76;
+  letter-spacing: -.08em;
 
-  line-height:
-  .76;
+  text-align: center;
 
-  letter-spacing:
-  -.08em;
-
-  text-align:
-  center;
-
-  transition:
-  transform .35s ease;
+  transition: transform .35s ease;
 }
 
 .visual:hover span {
-
   transform:
   scale(1.07)
   rotate(-2deg);
 }
 
-/* Project colours */
-
 .v1 {
-  background:
-  #ff4f00;
+  background: #ff4f00;
 }
 
 .v2 {
-  background:
-  #d7ff39;
+  background: #d7ff39;
 }
 
 .v3 {
-  background:
-  #6ec8ff;
+  background: #6ec8ff;
 }
 
 .v4 {
-  background:
-  #ff7bd5;
+  background: #ff7bd5;
 }
 
 .project-copy {
-
-  padding-top:
-  18px;
+  padding-top: 18px;
 }
 
 .project-copy h3 {
+  font-size: clamp(26px, 3vw, 44px);
 
-  font-size:
-  clamp(
-  26px,
-  3vw,
-  44px
-  );
+  letter-spacing: -.04em;
 
-  letter-spacing:
-  -.04em;
-
-  margin:
-  10px 0;
+  margin: 10px 0;
 }
 
 .project-copy p {
+  max-width: 650px;
 
-  max-width:
-  650px;
+  line-height: 1.5;
 
-  line-height:
-  1.5;
-
-  color:
-  #bdb9b0;
+  color: #bdb9b0;
 }
 
 .tiny {
+  font-family: "DM Mono", monospace;
 
-  font-family:
-  "DM Mono",
-  monospace;
+  font-size: 10px;
 
-  font-size:
-  10px;
-
-  color:
-  #777;
+  color: #777;
 }
 
-/* =========================
+
+/* =========================================
    BELIEFS
-========================= */
+========================================= */
 
 .beliefs {
-
-  background:
-  #d7ff39;
+  background: #d7ff39;
 }
 
 .belief-list {
-
-  border-top:
-  1px solid;
+  border-top: 1px solid;
 }
 
 .belief-list p {
+  font-size: clamp(38px, 6vw, 92px);
 
-  font-size:
-  clamp(
-  38px,
-  6vw,
-  92px
-  );
+  font-weight: 700;
 
-  font-weight:
-  700;
+  letter-spacing: -.055em;
+  line-height: .95;
 
-  letter-spacing:
-  -.055em;
+  border-bottom: 1px solid;
 
-  line-height:
-  .95;
+  margin: 0;
 
-  border-bottom:
-  1px solid;
-
-  margin:
-  0;
-
-  padding:
-  28px 0;
+  padding: 28px 0;
 }
 
 .belief-list em {
-
-  font-family:
-  Georgia,
-  serif;
-
-  font-weight:
-  400;
+  font-family: Georgia, serif;
+  font-weight: 400;
 }
 
-/* =========================
+
+/* =========================================
    CONTACT
-========================= */
+========================================= */
 
 .contact {
+  min-height: 100svh;
 
-  min-height:
-  100svh;
+  background: var(--acid);
 
-  background:
-  var(--acid);
-
-  display:
-  flex;
-
-  flex-direction:
-  column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact h2 {
+  font-size: clamp(90px, 18vw, 270px);
 
-  font-size:
-  clamp(
-  90px,
-  18vw,
-  270px
-  );
-
-  margin:
-  auto 0 50px;
+  margin: auto 0 50px;
 }
 
 .last {
+  font-size: clamp(28px, 4vw, 60px);
 
-  font-size:
-  clamp(
-  28px,
-  4vw,
-  60px
-  );
+  line-height: 1;
 
-  line-height:
-  1;
-
-  margin:
-  0 0 70px;
+  margin: 0 0 70px;
 }
 
 .contact-links {
+  display: flex;
 
-  display:
-  flex;
+  gap: 30px;
 
-  gap:
-  30px;
+  border-top: 1px solid;
 
-  border-top:
-  1px solid;
+  padding-top: 18px;
 
-  padding-top:
-  18px;
+  font-family: "DM Mono", monospace;
 
-  font-family:
-  "DM Mono",
-  monospace;
-
-  font-size:
-  13px;
+  font-size: 13px;
 }
 
 .contact-links a:hover {
-
-  text-decoration:
-  line-through;
+  text-decoration: line-through;
 }
 
 .footnote {
+  margin-top: 70px;
 
-  margin-top:
-  70px;
+  font-family: "DM Mono", monospace;
 
-  font-family:
-  "DM Mono",
-  monospace;
-
-  font-size:
-  10px;
+  font-size: 10px;
 }
 
-/* =========================
-   SCROLL ANIMATION
-========================= */
+
+/* =========================================
+   SCROLL ANIMATIONS
+========================================= */
 
 .reveal {
+  opacity: 0;
 
-  opacity:
-  0;
-
-  transform:
-  translateY(22px);
+  transform: translateY(22px);
 
   transition:
   opacity .65s ease,
@@ -699,115 +480,169 @@ a {
 }
 
 .reveal.in {
-
-  opacity:
-  1;
-
-  transform:
-  none;
+  opacity: 1;
+  transform: none;
 }
 
-/* =========================
-   MOBILE
-========================= */
 
-@media
-(max-width: 700px) {
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .nav {
+    padding:
+    0
+    5vw;
+  }
 
   .nav nav {
-
-    gap:
-    12px;
+    gap: 18px;
   }
 
   .nav nav a:nth-child(2) {
-
-    display:
-    none;
+    display: none;
   }
 
-  .hero {
 
-    padding-top:
-    90px;
+  /* HERO */
+
+  .hero {
+    padding:
+    100px
+    5vw
+    32px;
+
+    min-height: 100svh;
+  }
+
+  .eyebrow {
+    font-size: 11px;
   }
 
   .hero h1 {
+    font-size: 20.5vw;
 
-    font-size:
-    23vw;
+    line-height: .80;
 
-    line-height:
-    .78;
-  }
+    letter-spacing: -.09em;
 
-  .hero h1 span {
+    width: 100%;
 
-    margin-left:
+    margin:
+    auto
+    0
     0;
   }
 
+  .hero h1 span {
+    margin-left: 0;
+  }
+
   .hero-bottom {
+    margin-top: 9vw;
 
-    align-items:
-    flex-start;
+    align-items: flex-start;
 
-    gap:
-    25px;
+    gap: 18px;
 
-    flex-direction:
-    column;
+    flex-direction: column;
+  }
+
+  .manifesto {
+    font-size: 7.2vw;
+
+    line-height: 1.04;
+
+    letter-spacing: -.045em;
+
+    max-width: 92%;
   }
 
   .aside {
+    align-self: flex-end;
 
-    align-self:
-    flex-end;
+    margin-top: 7vw;
+
+    margin-right: 4vw;
+
+    font-size: 3.4vw;
+
+    line-height: 1.45;
   }
 
-  .section {
+  .scroll {
+    margin-top: auto;
 
+    padding-top: 13vw;
+
+    font-size: 10px;
+  }
+
+
+  /* SECTIONS */
+
+  .section {
     padding:
     75px
     5vw;
   }
 
   .section h2 {
-
     margin:
-    45px 0 65px;
+    45px
+    0
+    65px;
   }
+
+
+  /* PLOT */
 
   .chapter {
-
     grid-template-columns:
-    15% 1fr;
+    15%
+    1fr;
   }
+
+
+  /* PROJECTS */
 
   .project-grid {
-
-    display:
-    block;
+    display: block;
   }
 
-  .project:not(.big)
-  .visual,
+  .project:not(.big) .visual,
   .visual {
-
-    height:
-    90vw;
+    height: 90vw;
   }
+
+
+  /* CONTACT */
 
   .contact-links {
-
-    flex-wrap:
-    wrap;
+    flex-wrap: wrap;
   }
 
   .contact h2 {
+    font-size: 24vw;
+  }
 
-    font-size:
-    24vw;
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 390px) {
+
+  .hero h1 {
+    font-size: 20vw;
+  }
+
+  .manifesto {
+    font-size: 7vw;
   }
 
 }
@@ -819,6 +654,10 @@ a {
 
 <body>
 
+
+<!-- ========================================
+     NAVIGATION
+======================================== -->
 
 <header class="nav">
 
@@ -847,17 +686,18 @@ Say hi
 </header>
 
 
+
 <main id="top">
 
 
-<!-- =====================
+<!-- ========================================
      HERO
-===================== -->
+======================================== -->
 
 <section class="hero">
 
 <p class="eyebrow">
-Pedro Moscoso · Barcelona
+Pedro Moscoso
 </p>
 
 
@@ -919,9 +759,9 @@ keep scrolling ↓
 
 
 
-<!-- =====================
-     MOVING TEXT
-===================== -->
+<!-- ========================================
+     MOVING TICKER
+======================================== -->
 
 <section
 class="ticker"
@@ -939,9 +779,9 @@ BRANDS ✦ STORIES ✦ CULTURE ✦ SPORT ✦ FASHION ✦ PEOPLE ✦ IDEAS ✦
 
 
 
-<!-- =====================
+<!-- ========================================
      CAREER
-===================== -->
+======================================== -->
 
 <section
 class="section plot"
@@ -994,9 +834,12 @@ MUSIC
 
 <p>
 
-Where it started: audiences, emotion,
-timing and the useful discovery that
-nobody remembers boring.
+Where it started:
+audiences,
+emotion,
+timing
+and the useful discovery
+that nobody remembers boring.
 
 </p>
 
@@ -1074,8 +917,10 @@ LAIE
 <p>
 
 Back to culture:
-books, museums,
-architecture, retail
+books,
+museums,
+architecture,
+retail
 and millions of visitors.
 
 Making a 40-year-old cultural brand
@@ -1094,9 +939,9 @@ feel very much alive.
 
 
 
-<!-- =====================
+<!-- ========================================
      PROJECTS
-===================== -->
+======================================== -->
 
 <section
 class="section work"
@@ -1375,9 +1220,9 @@ whenever you're ready.
 
 
 
-<!-- =====================
+<!-- ========================================
      BELIEFS
-===================== -->
+======================================== -->
 
 <section
 class="section beliefs">
@@ -1457,9 +1302,9 @@ optional.
 
 
 
-<!-- =====================
+<!-- ========================================
      CONTACT
-===================== -->
+======================================== -->
 
 <section
 class="section contact"
@@ -1551,11 +1396,16 @@ too seriously.
 
 <script>
 
+/* YEAR */
+
 document
 .getElementById("year")
 .textContent =
 new Date().getFullYear();
 
+
+
+/* SCROLL REVEAL */
 
 const items =
 document.querySelectorAll(
